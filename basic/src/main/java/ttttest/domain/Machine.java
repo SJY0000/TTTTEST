@@ -13,17 +13,17 @@ import ttttest.domain.MachineAdded;
 @Data
 public class Machine {
 
-    private Long id;
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private String mCode;
+    private Long id;
 
-    private String mName;
+    private String code;
 
-    private String mSize;
+    private String name;
 
-    private String mModel;
+    private String size;
+
+    private String model;
 
     @PostPersist
     public void onPostPersist() {

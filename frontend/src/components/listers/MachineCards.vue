@@ -68,10 +68,10 @@
             me.values = temp.data._embedded.machines;
             
             me.newValue = {
-                'mCode': '',
-                'mName': '',
-                'mSize': '',
-                'mModel': '',
+                'code': '',
+                'name': '',
+                'size': '',
+                'model': '',
             }
         },
         methods:{

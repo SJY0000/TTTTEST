@@ -30,12 +30,12 @@
             :selectionChanged="onSelectionChanged"
             style="margin-top:10px; max-height:65vh;"
         >
-            <wj-flex-grid-filter :filterColumns="['mCode','mName','mSize','mModel',]" />
+            <wj-flex-grid-filter :filterColumns="['code','name','size','model',]" />
             <wj-flex-grid-column binding="index" header="Number" width="2*" :isReadOnly="true" align="center" />
-            <wj-flex-grid-column binding="mCode" header="mCode" width="2*" :isReadOnly="true" align="center" />
-            <wj-flex-grid-column binding="mName" header="mName" width="2*" :isReadOnly="true" align="center" />
-            <wj-flex-grid-column binding="mSize" header="mSize" width="2*" :isReadOnly="true" align="center" />
-            <wj-flex-grid-column binding="mModel" header="mModel" width="2*" :isReadOnly="true" align="center" />
+            <wj-flex-grid-column binding="code" header="code" width="2*" :isReadOnly="true" align="center" />
+            <wj-flex-grid-column binding="name" header="name" width="2*" :isReadOnly="true" align="center" />
+            <wj-flex-grid-column binding="size" header="size" width="2*" :isReadOnly="true" align="center" />
+            <wj-flex-grid-column binding="model" header="model" width="2*" :isReadOnly="true" align="center" />
         </wj-flex-grid>
         <v-col style="margin-bottom:40px;">
             <div class="text-center">

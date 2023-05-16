@@ -20,6 +20,6 @@ public class MachineController {
 
     @PutMapping("/machines/search/findByMCode")
     public Object findByMCode(@RequestBody MachineViewQuery query) {
-        return machineRepository.findByMCode(query.getMCode());
+        return machineRepository.findByMCode(query.getCode());
     }
 }
