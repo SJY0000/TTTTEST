@@ -9,11 +9,11 @@ import ttttest.infra.AbstractEvent;
 @ToString
 public class MachineAdded extends AbstractEvent {
 
-    private String mCode;
     private Long id;
-    private String mName;
-    private String mSize;
-    private String mModel;
+    private String code;
+    private String name;
+    private String size;
+    private String model;
 
     public MachineAdded(Machine aggregate) {
         super(aggregate);

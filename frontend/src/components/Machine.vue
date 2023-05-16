@@ -17,10 +17,10 @@
         </v-card-title >
 
         <v-card-text>
-            <String label="MCode" v-model="value.mCode" :editMode="editMode"/>
-            <String label="MName" v-model="value.mName" :editMode="editMode"/>
-            <String label="MSize" v-model="value.mSize" :editMode="editMode"/>
-            <String label="MModel" v-model="value.mModel" :editMode="editMode"/>
+            <String label="Code" v-model="value.code" :editMode="editMode"/>
+            <String label="Name" v-model="value.name" :editMode="editMode"/>
+            <String label="Size" v-model="value.size" :editMode="editMode"/>
+            <String label="Model" v-model="value.model" :editMode="editMode"/>
         </v-card-text>
 
         <v-card-actions>

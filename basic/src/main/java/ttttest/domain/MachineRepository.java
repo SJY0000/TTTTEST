@@ -7,6 +7,6 @@ import ttttest.domain.*;
 
 @RepositoryRestResource(collectionResourceRel = "machines", path = "machines")
 public interface MachineRepository
-    extends PagingAndSortingRepository<Machine, String> {
-    List<Machine> findByMCode(String mCode);
+    extends PagingAndSortingRepository<Machine, Long> {
+    List<Machine> findByMCode(String code);
 }

@@ -18,10 +18,10 @@
 
                         <v-list-item-subtitle style="font-size:25px; font-weight:700;">
                             [ Id :  {{data.id }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ MCode :  {{data.mCode }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ MName :  {{data.mName }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ MSize :  {{data.mSize }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ MModel :  {{data.mModel }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ Code :  {{data.code }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ Name :  {{data.name }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ Size :  {{data.size }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ Model :  {{data.model }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </v-list-item-subtitle>
 
                     </v-list-item-content>
@@ -103,10 +103,10 @@
             this.values = temp.data._embedded.machines;
             
             this.newValue = {
-                'mCode': '',
-                'mName': '',
-                'mSize': '',
-                'mModel': '',
+                'code': '',
+                'name': '',
+                'size': '',
+                'model': '',
             }
         },
         methods: {

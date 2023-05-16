@@ -67,10 +67,10 @@
             headers: 
                 [
                     { text: "id", value: "id" },
-                    { text: "mCode", value: "mCode" },
-                    { text: "mName", value: "mName" },
-                    { text: "mSize", value: "mSize" },
-                    { text: "mModel", value: "mModel" },
+                    { text: "code", value: "code" },
+                    { text: "name", value: "name" },
+                    { text: "size", value: "size" },
+                    { text: "model", value: "model" },
                 ],
             machine : [],
             newValue: {},
@@ -88,10 +88,10 @@
             this.values = temp.data._embedded.machines;
 
             this.newValue = {
-                'mCode': '',
-                'mName': '',
-                'mSize': '',
-                'mModel': '',
+                'code': '',
+                'name': '',
+                'size': '',
+                'model': '',
             }
         },
         methods: {

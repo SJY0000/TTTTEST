@@ -23,16 +23,16 @@
                                         <v-list-item-title>
                                         </v-list-item-title>
                                         <v-list-item-subtitle>
-                                            MCode :  {{item.mCode }}
+                                            Code :  {{item.code }}
                                         </v-list-item-subtitle>
                                         <v-list-item-subtitle>
-                                            MName :  {{item.mName }}
+                                            Name :  {{item.name }}
                                         </v-list-item-subtitle>
                                         <v-list-item-subtitle>
-                                            MSize :  {{item.mSize }}
+                                            Size :  {{item.size }}
                                         </v-list-item-subtitle>
                                         <v-list-item-subtitle>
-                                            MModel :  {{item.mModel }}
+                                            Model :  {{item.model }}
                                         </v-list-item-subtitle>
                                     </v-list-item-content>
 
@@ -77,8 +77,8 @@
             }
 
             if(me.value && typeof me.value == "object" && Object.values(me.value)[0]) {
+                var idKey = 'id'
                 
-                var idKey = 'mCode'
                 
                 
                 
@@ -100,8 +100,8 @@
                 if (this.editMode) {
                     this.pickerDialog = true
                 } else {
+                    var idKey = 'id'
                     
-                    var idKey = 'mCode'
                     
                     
                     
@@ -114,8 +114,8 @@
                 var obj = {}
                 if(val != undefined) {
                     var arr = this.list[val]._links.self.href.split('/');
+                    obj['id'] = arr[4]; 
                     
-                    obj['mCode'] = arr[4]; 
                     
                     
                     

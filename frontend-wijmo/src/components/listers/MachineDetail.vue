@@ -6,16 +6,16 @@
 
         <v-card-text>
             <div>
-                <String label="MCode" v-model="item.mCode" :editMode="editMode" @change="change" />
+                <String label="Code" v-model="item.code" :editMode="editMode" @change="change" />
             </div>
             <div>
-                <String label="MName" v-model="item.mName" :editMode="editMode" @change="change" />
+                <String label="Name" v-model="item.name" :editMode="editMode" @change="change" />
             </div>
             <div>
-                <String label="MSize" v-model="item.mSize" :editMode="editMode" @change="change" />
+                <String label="Size" v-model="item.size" :editMode="editMode" @change="change" />
             </div>
             <div>
-                <String label="MModel" v-model="item.mModel" :editMode="editMode" @change="change" />
+                <String label="Model" v-model="item.model" :editMode="editMode" @change="change" />
             </div>
         </v-card-text>
 

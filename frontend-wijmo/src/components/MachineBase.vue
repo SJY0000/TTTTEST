@@ -73,7 +73,7 @@
                 } 
                 var temp = null;
                 if(query!=null){
-                    temp = await axios.put(axios.fixUrl('/machines/search/findByMCode'), { mCode: query.parameters.mCode });
+                    temp = await axios.put(axios.fixUrl('/machines/search/findByMCode'), { code: query.parameters.code });
                     me.values = await me.processData(temp.data);
                 }else{
                     temp = await axios.get(axios.fixUrl('/machines'))

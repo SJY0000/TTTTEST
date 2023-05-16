@@ -7,7 +7,7 @@
         <v-card-text>
             <v-row no-gutters style="margin: 15px 0px -30px -15px;">
                 <v-col style="max-width:140px;">
-                    <String class="attributes-list" label="MCode" v-model="value.parameters.mCode" :editMode="editMode"/>
+                    <String class="attributes-list" label="Code" v-model="value.parameters.code" :editMode="editMode"/>
                 </v-col>
                 <v-col>
                     <v-btn class="gs-query-search-btn"
@@ -36,14 +36,14 @@
             },
         }),
         created() {
-            this.value.parameters.mCode = '';
+            this.value.parameters.code = '';
         },
         watch: {
         },
         methods: {
             search() {
                 let search = null;
-                if(this.value.parameters.mCode == '' ) {
+                if(this.value.parameters.code == '' ) {
                     search = null;
                 }else{
                     search = this.value;

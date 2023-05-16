@@ -8,5 +8,5 @@ import lombok.Data;
 @Data
 public class MachineViewQuery {
 
-    String mCode;
+    String code;
 }
